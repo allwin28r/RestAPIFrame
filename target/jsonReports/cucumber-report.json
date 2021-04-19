@@ -1,0 +1,154 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-19T02:19:26.826Z",
+        "line": 30,
+        "name": "Validate the Delete place API",
+        "description": "",
+        "id": "validate-the-place-api;validate-the-delete-place-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 966000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "ADD Place detail is formed \"Near Forest\" \"French\" \"25,French\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Near Forest\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"French\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"25,French\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.add_place_detail_is_formed(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2145000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "request is posted as \"post\" request FOR \"AddPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"post\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.request_is_posted_as_request_for(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Validate if the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.validate_if_the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 573000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Deleteplace payload",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.deleteplace_payload()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2668000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "request is posted as \"post\" request FOR \"deletePlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"post\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"deletePlaceAPI\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.request_is_posted_as_request_for(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Validte if the \"status\" is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.validte_if_the_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the place API",
+    "description": "",
+    "id": "validate-the-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidations.feature",
+    "tags": []
+  }
+]

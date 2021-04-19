@@ -3,34 +3,34 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-19T02:19:26.826Z",
-        "line": 30,
-        "name": "Validate the Delete place API",
+        "start_timestamp": "2021-04-19T11:21:03.816Z",
+        "line": 15,
+        "name": "Add place should be successful",
         "description": "",
-        "id": "validate-the-place-api;validate-the-delete-place-api;;2",
+        "id": "validate-the-place-api;add-place-should-be-successful;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 966000000,
+              "duration": 959000000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "ADD Place detail is formed \"Near Forest\" \"French\" \"25,French\"",
+            "line": 5,
+            "name": "ADD Place detail is formed \"Aruvi\" \"English\" \"23,George\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Near Forest\"",
+                  "val": "\"Aruvi\"",
                   "offset": 27
                 },
                 {
-                  "val": "\"French\"",
-                  "offset": 41
+                  "val": "\"English\"",
+                  "offset": 35
                 },
                 {
-                  "val": "\"25,French\"",
-                  "offset": 50
+                  "val": "\"23,George\"",
+                  "offset": 45
                 }
               ],
               "location": "stepDefinitions.StepDefinition.add_place_detail_is_formed(java.lang.String,java.lang.String,java.lang.String)"
@@ -39,10 +39,10 @@
           },
           {
             "result": {
-              "duration": 2145000000,
+              "duration": 1990000000,
               "status": "passed"
             },
-            "line": 21,
+            "line": 6,
             "name": "request is posted as \"post\" request FOR \"AddPlaceAPI\"",
             "match": {
               "arguments": [
@@ -61,10 +61,10 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
-            "line": 22,
+            "line": 7,
             "name": "Validate if the status code is 200",
             "match": {
               "arguments": [
@@ -79,44 +79,10 @@
           },
           {
             "result": {
-              "duration": 573000000,
+              "duration": 541000000,
               "status": "passed"
             },
-            "line": 23,
-            "name": "Deleteplace payload",
-            "match": {
-              "location": "stepDefinitions.StepDefinition.deleteplace_payload()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2668000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "request is posted as \"post\" request FOR \"deletePlaceAPI\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"post\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"deletePlaceAPI\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepDefinitions.StepDefinition.request_is_posted_as_request_for(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9000000,
-              "status": "passed"
-            },
-            "line": 25,
+            "line": 8,
             "name": "Validte if the \"status\" is \"OK\"",
             "match": {
               "arguments": [
@@ -132,11 +98,33 @@
               "location": "stepDefinitions.StepDefinition.validte_if_the_is(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2432000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify if the \"getPlaceAPI\" has \"Aruvi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Aruvi\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.verify_if_the_has(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@DeletePlace"
+            "name": "@AddPlace"
           },
           {
             "name": "@Regression"

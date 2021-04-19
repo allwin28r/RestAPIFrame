@@ -12,11 +12,11 @@ Multiparts:		<none>
 Body:
 {
     "accuracy": 50,
-    "name": "Near Forest",
+    "name": "Aruvi",
     "phone_number": "(+91) 983 893 3937",
-    "address": "25,French",
+    "address": "23,George",
     "website": "https://rahulshettyacademy.com",
-    "language": "French",
+    "language": "English",
     "location": {
         "lat": -38.383494,
         "lng": 33.427362
@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Mon, 19 Apr 2021 02:19:29 GMT
+Date: Mon, 19 Apr 2021 11:21:07 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,38 +40,46 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "dec3ed8e756ae2fdcb41135e1e4ed20a",
+    "place_id": "82f839546290221ddeabd0873445cb5b",
     "scope": "APP",
-    "reference": "ca0264a88b12e4c23898f3611b943a2eca0264a88b12e4c23898f3611b943a2e",
-    "id": "ca0264a88b12e4c23898f3611b943a2e"
+    "reference": "17c6c4c6c9e80e69fefa52749f8df4b217c6c4c6c9e80e69fefa52749f8df4b2",
+    "id": "17c6c4c6c9e80e69fefa52749f8df4b2"
 }
-Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=82f839546290221ddeabd0873445cb5b
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
+				place_id=82f839546290221ddeabd0873445cb5b
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "place_id": "dec3ed8e756ae2fdcb41135e1e4ed20a"
-}
+Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 19 Apr 2021 02:19:31 GMT
+Date: Mon, 19 Apr 2021 11:21:08 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
 Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 15
+Content-Length: 242
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: application/json;charset=UTF-8
 
 {
-    "status": "OK"
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "50",
+    "name": "Aruvi",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "23,George",
+    "types": "shoe park,shop",
+    "website": "https://rahulshettyacademy.com",
+    "language": "English"
 }
